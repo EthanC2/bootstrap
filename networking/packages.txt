@@ -1,5 +1,15 @@
-dnsutils
+network-manager
 ufw
+
 ssh
-firefox
+telnet
+wget
+curl
+
+firefox-esr
 lynx
+
+nmap
+dnsutils
+tshark
+wireshark

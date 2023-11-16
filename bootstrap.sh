@@ -3,6 +3,7 @@ set -e
 MODE=$1
 SCRIPTS=(
     networking
+    filesystem
 )
 
 # 1. Safety checks

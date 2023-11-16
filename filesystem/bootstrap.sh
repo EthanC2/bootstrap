@@ -2,4 +2,5 @@
 FLAGS=$1
 set -$FLAGS
 
-cp -r base "$HOME"
+echo "Copied directory structure to $HOME/base"
+cp -rn filesystem/base "$HOME"
