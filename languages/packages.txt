@@ -1,9 +1,16 @@
 gcc
 g++
+
 default-jre
 default-jdk
 default-jdk-doc
+
 python3
+
 npm
+
 php
+
 perl
+mawk
+sed

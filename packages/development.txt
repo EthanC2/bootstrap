@@ -1,5 +1,0 @@
-git
-make
-cmake
-binutils
-gdb

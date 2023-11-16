@@ -4,6 +4,7 @@ MODE=$1
 SCRIPTS=(
     networking
     filesystem
+    languages
 )
 
 # 1. Safety checks
@@ -30,8 +31,8 @@ else
 fi
 
 # 3. Update system and all existing packages
-sudo apt update -y
-sudo apt upgrade -y
+[[ $MODE == "run" ]] && sudo apt update -y
+[[ $MODE == "run" ]] && sudo apt upgrade -y
 
 # 4. Run each child installation script
 for script in ${SCRIPTS[@]}; do

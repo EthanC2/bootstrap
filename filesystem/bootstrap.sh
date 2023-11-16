@@ -2,5 +2,6 @@
 FLAGS=$1
 set -$FLAGS
 
+# 1. Copy base filesystem to $HOME/base
 echo "Copied directory structure to $HOME/base"
 cp -rn filesystem/base "$HOME"

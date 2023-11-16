@@ -1,0 +1,11 @@
+git
+
+make
+cmake
+
+valgrind
+cppcheck
+
+binutils
+hexcurse
+gdb

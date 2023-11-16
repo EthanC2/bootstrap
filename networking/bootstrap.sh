@@ -3,7 +3,7 @@ echo $SCRIPT_NAME
 FLAGS=$1
 set -$FLAGS
 
-# 1. Install packages
+# 1. Install networking packages
 sudo apt install -y $(cat networking/packages.txt | tr '\n' ' ')
 
 # 2. Enable firewall
