@@ -1,0 +1,6 @@
+# 1. Overwrites
+alias ls='ls --color=auto'
+alias grep='grep --color=auto -P'
+
+# 2. Conjunctions
+alias cls='clear; ls'
