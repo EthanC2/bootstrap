@@ -5,11 +5,14 @@ ssh
 telnet
 wget
 curl
+aria2
 
 firefox-esr
+chromium
 lynx
 
 nmap
+ncat
 dnsutils
 tshark
 wireshark

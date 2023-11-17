@@ -5,3 +5,9 @@ Linux systems. It installs and configures the network, firewall, shell, filesyst
 # Execution
 Run: `sudo -E ./bootstrap.sh --run` <br/>
 Dryrun: `sudo -E ./boostrap.sh --dry-run`
+
+# Partial Bootstrapping
+Since each directory has its own bootstrapping script, you can also run specific scripts in isolation.
+
+# TODO
+- Add Network Intrusion-detection system

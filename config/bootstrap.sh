@@ -1,5 +1,5 @@
 #!/bin/bash
-FLAGS=$1
+FLAGS=${1:-eu}
 set -$FLAGS
 
 if [[ $MODE == "dryrun" ]]; then

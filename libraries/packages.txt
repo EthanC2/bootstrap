@@ -1,0 +1,6 @@
+libomp5
+libfmt9
+libfmt-doc
+libboost-all-dev
+argagg-dev
+argagg-dev-doc
