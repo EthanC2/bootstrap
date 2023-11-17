@@ -4,11 +4,11 @@ set -$FLAGS
 
 # 1. Install language packages
 echo "Installing language packages..."
-sudo apt install -y $(cat languages/packages.txt | tr '\n' ' ')
+sudo apt install -y -qq $(cat languages/packages.txt | tr '\n' ' ')
 
 
 # 2. Install Rust
-if [[ ! -x $(which cargo) ]]; then
+if [[ -z $(which cargo) ]]; then
     echo "Installing Rust..."
     curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
     source "$HOME/.cargo/env"
@@ -17,7 +17,7 @@ else
 fi
 
 # 3. Install the latest .NET LTS release
-if [[ ! -x $(which dotnet) ]]; then
+if [[ -z $(which dotnet) ]]; then
     echo "Installing .NET"
 
     wget https://dot.net/v1/dotnet-install.sh -O dotnet-install.sh

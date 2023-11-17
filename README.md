@@ -3,5 +3,5 @@
 Linux systems. It installs and configures the network, firewall, shell, filesystem, languages, editors, aliases, and more. 
 
 # Execution
-Run: `sudo -E ./bootstrap.sh run` <br/>
-Dryrun: `sudo -E ./boostrap.sh dryrun`
+Run: `sudo -E ./bootstrap.sh --run` <br/>
+Dryrun: `sudo -E ./boostrap.sh --dry-run`

@@ -2,6 +2,5 @@
 FLAGS=$1
 set -$FLAGS
 
-#for file in $(ls bash*); do
-#    cat $file | tee -a '$HOME/.$file'
-#done
+# 1. Install shell packages
+sudo apt install -y -qq $(cat shell/packages.txt | tr '\n' ' ')

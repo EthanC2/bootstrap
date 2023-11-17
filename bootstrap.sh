@@ -5,11 +5,14 @@ SCRIPTS=(
     networking
     filesystem
     languages
+    development
+    editors
+    shell
 )
 
 # 1. Safety checks
-if [[ "$MODE" != "run" ]] && [[ "$MODE" != "dryrun" ]]; then
-    >&2 echo "usage: sudo -E ./bootstrap.sh [run | dryrun]"
+if [[ "$MODE" != "--run" ]] && [[ "$MODE" != "--dry-run" ]]; then
+    >&2 echo "usage: sudo -E ./bootstrap.sh [--run | --dry-run]"
     exit 1
 fi
 
@@ -24,15 +27,15 @@ if [[ "$HOME" == "/root" ]]; then
 fi
 
 # 2. Choose script mode
-if [[ $MODE == "run" ]]; then
+if [[ $MODE == "--run" ]]; then
     FLAGS=eu
 else
     FLAGS=euvn
 fi
 
 # 3. Update system and all existing packages
-[[ $MODE == "run" ]] && sudo apt update -y
-[[ $MODE == "run" ]] && sudo apt upgrade -y
+[[ $MODE == "--run" ]] && sudo apt update -y -qq
+[[ $MODE == "--run" ]] && sudo apt upgrade -y -qq
 
 # 4. Run each child installation script
 for script in ${SCRIPTS[@]}; do
