@@ -1,0 +1,17 @@
+coreutils 
+locate
+
+screen
+tldr
+
+neofetch
+cowsay
+lolcat
+cmatrix
+sl
+
+grep
+mawk
+sed
+
+jq

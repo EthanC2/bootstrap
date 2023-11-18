@@ -2,12 +2,8 @@
 set -e
 MODE=$1
 SCRIPTS=(
-    networking
-    filesystem
-    languages
-    development
-    editors
-    shell
+    programming
+    system
 )
 
 # 1. Safety checks
@@ -43,4 +39,4 @@ for script in ${SCRIPTS[@]}; do
 done
 
 # 3. Finish
-echo "Bootstrap successful."
+echo -e "\n\nBOOTSTRAP COMPLETED SUCCESSFULLY."

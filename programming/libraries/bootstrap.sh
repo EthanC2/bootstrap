@@ -4,4 +4,4 @@ set -$FLAGS
 
 # 1. Install library packages
 echo "Installing library packages..."
-sudo apt install -y -qq $(cat libraries/packages.txt | tr '\n' ' ')
+sudo apt install -y -qq $(cat programming/libraries/packages.txt | tr '\n' ' ')

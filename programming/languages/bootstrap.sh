@@ -4,7 +4,7 @@ set -$FLAGS
 
 # 1. Install language packages
 echo "Installing language packages..."
-sudo apt install -y -qq $(cat languages/packages.txt | tr '\n' ' ')
+sudo apt install -y -qq $(cat programming/languages/packages.txt | tr '\n' ' ')
 
 
 # 2. Install Rust
